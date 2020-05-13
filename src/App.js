@@ -41,12 +41,12 @@ class App extends Component {
             <form onSubmit={(event) => this.addUser(event)}>
               <div className="form-group">
                 <label htmlFor="first-name">Nombre</label>
-                <input value={this.state.newfirst} className={this.state.error} type="text" className="form-control" name="first-name" onChange={this.updateFirst.bind(this)} />
+                <input value={this.state.newfirst} className={`${this.state.error} form-control`} type="text"  name="first-name" onChange={this.updateFirst.bind(this)} />
               </div>
 
               <div className="form-group">
                 <label htmlFor="last-name">Apellido</label>
-                <input value={this.state.newlast} className={this.state.error} type="text" className="form-control" name="last-name" onChange={this.updateLast.bind(this)} />
+                <input value={this.state.newlast} className={`${this.state.error} form-control`} type="text"  name="last-name" onChange={this.updateLast.bind(this)} />
               </div>
 
               <div className="action">
